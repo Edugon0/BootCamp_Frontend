@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+.boxes{
+    height: calc(100vh);
+    position: relative;
+    display: grid;
+    flex-flow:row wrap;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 2rem 5rem;
+
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-template-rows: 1fr; */
+}
+
+.box{
+    min-height: 10rem;
+    min-width: 20rem;
+    padding: 1.5rem;
+    border: 10px solid rgb(180, 159, 159);
+    border-radius: 0.4;
+    background-color: rgb(4, 4, 44);
+    color: antiquewhite;
+    font-size: 4rem;
+    display: inline-block;
+    flex: 1;
+}
+
+
+/*    
+grid-template-columns: 1fr 3fr 1fr; (serve para modificar o tamanho da box em forma de coluna)
+*/
+
+
+
+

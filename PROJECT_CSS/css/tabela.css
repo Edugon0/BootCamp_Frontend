@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-color: aquamarine; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8;
+}
+
+main{
+    /* padding-top: 7rem; */
+
+}
+
+
+
+.bg{
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+    background-image: url('https://images.unsplash.com/photo-1699103460899-889883dfc64f?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+table tr:first-child /* essa pseudo class fez que direcionar a customização so na coluna */{
+    background-color: rgb(8, 49, 49);
+    color: aliceblue;
+} 
+
+table tr:nth-child(2n + 3) /* serve para colocar regras para customização da minha table */{
+background-color: #999;
+
+}
+
+table{
+    font-size: 2.4rem;
+    border-collapse: separate;
+}
+
+h1{
+    color: rgba(0, 116, 77, 0.494); 
+    font-size: 3.6rem;
+    font-weight: 100;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: uppercase ;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{font-size: 3.1rem;}
+
+ol{
+    padding-left: 2.4rem;
+    font-size: 2.2rem;
+    
+}
+
+ul{
+    padding-left: 2.4rem;
+    font-size: 2.2rem;
+    list-style: circle; 
+}
+
+.menu{
+    position: fixed;
+    background-color: aqua;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;
+
+}
+
+.contact h2{
+    top: 7rem;
+    position: sticky;
+    background-color: blue;
+
+}
+
+.boxes{
+    height: calc(100vh);
+    position: relative;
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    /* align-items: center; */
+    align-content: center;
+    gap: 2rem 5rem;
+}
+
+.box{
+min-height: 10rem;
+min-width: 20rem;
+padding: 1.5rem;
+border: 10px solid rgb(180, 159, 159);
+border-radius: 0.4;
+background-color: rgb(4, 4, 44);
+color: antiquewhite;
+font-size: 4rem;
+display: inline-block;
+/* flex-basis: 30%; */
+flex: 1;
+}
+
+.box:nth-child(3){
+    order: 0;
+}
+
+/* .box:nth-child(1){
+    position: absolute;
+    top: 30px;
+    left: 30px;
+} */
+
+.box:nth-child(n+2){
+   
+}
+
+.box + span{
+    clear: both;
+}
+
+img{
+    height: 11rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+
+
+
+
+/*
+padding-left: 2.4rem; (serve para ajustar o que fica fora da tela do site)
+
+border-collapse: separate; (serve para customizar a borda da minha tabela e tambem consegue customizar o meu hr)
+
+list-style: none; (serve customizar os simbolo da minha linha com numeração de ordenamento ou bolinha ou quadrado)
+
+display: block; (ele barra qualquer coisa que fica do lado dela ou dentro dela)
+
+object-fit: cover; (ajudas no ajuste da imagen pra não ficar muito borrado ou distorcida)
+
+display: inline-block; (ele não bloqueia que imagem fica do lado do quadrado mas restringi a entrar no quadrado)
+
+border-radius: 1rem; (isso afina a minha borda deixando mais circula a borda)
+
+z-index: 1; (serve para indicar que ele tem prioridade que os outros)
+
+flex-wrap: wrap; (serve para quebra de linha)
+
+flex-direction: column; (serve para ajuste de como vai ficar a minha caixinha, como nesse codigo está escrito column, quer dizer para minha caixa ficar em coluna)
+
+order: -1; (serve para coloca posicionar ou ordenar a minha box)
+*/

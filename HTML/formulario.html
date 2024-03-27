@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Formulario</h1>
+        <hr>
+        <br>
+
+
+        <form action="" method="post"> <!-- TAG para criação de um formulario -->
+            <di>
+                <label for="texto">Nome: </label> <!-- serve para indicar para qual tag usar -->
+                <input type="text" id="texto" placeholder="digite o seu nome" name="nome"> <!-- serve entrada de algo como texto, botão e entre outro-->
+            </di>
+
+            <div> <!-- Esse Div serve para criação do meu input senha -->
+                <label for="senha">Senha:</label>
+                <input type="password" placeholder="coloque a sua senha" name="senha">
+            </div>
+
+            <div> <!-- esse Div serve para criação do meu input E-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" name="e-mail" id="email" placeholder="coloque o seu E-mail">
+            </div>
+
+            <div> <!--- Esse Div serve para criação da minha input Data -->
+                <label for="data">Data de nascimento:</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div> <!--- Esse Div serve para criação da minha input hora -->
+                <label for="hora">hora:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+
+            <div> <!--- Esse Div serve para criação do meu input numero -->
+                <label for="numero">numero:</label>
+                <input type="number" name="numero" id="numero">
+            </div>
+
+            <div> <!--- Esse Div serve para criação do meu input file (serve para coloca algum arquivo nesse "file") -->
+                <label for="arquivo">file:</label>
+                <input type="file" name="arquivo" id="arquivo">
+            </div>
+
+            <div> <!--- Esse Div serve para criação da minha input URL -->
+                <label for="url">url:</label>
+                <input type="url" name="url" id="url">
+            </div>
+
+            <div> <!--- Esse Div serve para criação do meu input color -->
+                <label for="color">color:</label>
+                <input type="color" name="color" id="color">
+            </div>
+            
+            <div> <!--- Esse Div serve para criação do meu input range -->
+                <label for="range">range:</label>
+                <input type="range" name="range" id="range">
+            </div>
+            
+            <div> <!--- Esse Div serve para criação do meu input checkbox -->
+                <label for="checkbox">checkbox:</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+
+            <div> <!--- Esse Div serve para criação do meu input radio(outra caixa de seleção) -->
+                <label for="radio">radio:</label>
+                <input type="radio" name="radio" id="radio">
+            </div>
+
+            <div> <!--- Esse Div serve para criação do meu input reset(campo para limpa informações dentro de outros input) -->
+                <label for="reset">reset:</label>
+                <input type="reset" name="reset" id="reset" value="limpar">
+            </div>
+
+            <div> <!--- Esse Div serve para criação do meu input submit (cria meio que um botão para envio) -->
+                <input type="submit" name="submit" id="submit" value="enviar">
+            </div>
+
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea> <!-- sereve para fazer campo de texto grande-->
+
+            <div>
+                <select name="select" id="selecionado"> <!-- serve para criar um campo para opção, como sexo da pessoa -->
+                    <option value="receita" disabled selected>selecione alguma oção</option>
+                    <option value="receita">receita</option>
+                    <option value="receita">comida</option>
+                    <option value="receita">gasto</option>
+                </select>
+            </div>
+
+            
+        </form>
+    </main>
+    
+</body>
+</html>
+
+
+<!-- placeholder: é um texto de sugestão que fica dentro do input -->
+
+<!-- values: para adicionar um texto dentro do meu input -->
+
+<!-- name: forma de submeter esse input no javaScript para reconhecer no banco de dados em JavaScripts -->
+
+<!-- action: ação que o meu formulario vai ser executado no meu script de Js  -->
+
+<!-- for que está na label é para indicar para quem é a label no caso ele pegara essa indicação no ID -->
+
+<!-- method="get" : serve para direcionar para algo, ou seja é o metodo de como quer enviar -->
+
+<!-- method="post" : faz a mesma coisa que o "get" mas com diferença que consegue esconder a informação do usario para não aparecer no link

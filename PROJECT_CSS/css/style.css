@@ -1,0 +1,112 @@
+/*
+*Medidas:
+-px 
+-rem
+-%
+-em
+
+pseudo class
+
+A minha propriedade *{} serve para criar meio que resert de configuração para toda estilização da sua tela, como a imagem completar a borda ou todos objetos tem que manter naquela posição
+
+*/
+*{
+ margin: 0;
+ padding: 0;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+
+
+h1{
+    color: rgba(0, 116, 77, 0.494); 
+    font-size: 9.6rem;
+    font-weight: 100;
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: uppercase ;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h2, h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.2rem;
+}
+
+.bg{
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+    background-image: url('https://images.unsplash.com/photo-1699103460899-889883dfc64f?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+a{
+    font-size: 3.2rem;
+}
+
+a:hover{
+    color: brown;
+}
+
+p{
+    font-size: 1.8rem;
+    text-indent: 9.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* 
+color: red; (para escolher a cor)
+
+font-size: 92px; (serve para aumenta a fonte)
+
+background-color: aqua; (serve para colocar cor de fundo)
+
+font-weight: 900; (serve para aumentar ou diminuir a grossura da minha fonte)
+
+height: 100px; (serve para colocar altura)
+
+width: 100px; (serve para colocar largura)
+
+background-image: (serve para colocar uma imagem de fundo no site)
+
+background-size: cover; (serve pra caber a imagem em determinado objeto, tambem é como uma capa, por isso que ele quebra a imagem)
+
+background-size: contain; (serve para conter a imagem)
+
+background-repeat: no-repeat; (serve para não repetir a imagem mais de uma vez com o contain)
+
+background-position: center; (serve para posicionar a sua imagem com left, center or right)
+
+margin: 0; (serve para minha imagem, muito utilizado na hora de completar a margin da imagens na tela)
+
+padding: 0; (serve para minha imagem, muito utilizado na hora de completar a preencimento da imagens na tela)
+
+background-attachment: fixed; (criar uma ilusão de Parallax , ou seja, parece que o meu paragrafo está ficando por cima da minha imagem)
+
+font-style: italic; (serve para modificar a fonte de texto)
+
+text-decoration: line-through; (serve para decorar o meu texto, como colocar o risco no meio do texto,  )
+
+text-transform: uppercase ; (serve para deixar o texto em caixa alta ou baixa) 
+
+text-align: center; (serve para posicionar o meu texto ou justifcar, pode ser no center, left or right)
+
+text-indent: 90px; (serve para criar um recuo no meus paragrafos ou texto pequenos)
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; (serve para fazer um buscar de fonte, caso uma não tenha no computador)
+
+height: 300vw; ou height: 300vh; (O vw e o vh serve como ocupação da imagem com 100%)
+
+
+*/
